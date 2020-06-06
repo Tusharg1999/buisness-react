@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import LoginSvg from '../../../assets/svgs/login.svg'
-import { LoginContainer, FormContainer, SvgContainer } from './styles'
+import LoginSvg from '../../../assets/svgs/loginSvg.svg'
+import { LoginContainer, FormContainer, SvgContainer, LoginSvgImage } from './styles'
 
 class Login extends Component {
     render() {
@@ -10,7 +10,7 @@ class Login extends Component {
                 <FormContainer>
                 </FormContainer>
                 <SvgContainer>
-
+                    <LoginSvgImage src={LoginSvg} alt="" />
                 </SvgContainer>
             </LoginContainer>
         )

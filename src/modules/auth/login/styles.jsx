@@ -7,14 +7,15 @@ height:100%;
 `
 
 const FormContainer = styled.div`
-flex:5;
+flex:3;
 display:flex;
 flex-direction:column;
 `
 const SvgContainer = styled.div`
-flex:6;
-display:flex;
-flex-direction:column;
-background-color:yellow
+flex:2;
 `
-export { LoginContainer, FormContainer, SvgContainer }
+const LoginSvgImage = styled.img`
+  height:100%;
+  float:right
+`
+export { LoginContainer, FormContainer, SvgContainer, LoginSvgImage }
