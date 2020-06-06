@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Login from "./modules/auth/login"
 import * as serviceWorker from './infrastructure/serviceWorker';
+import { ThemeProvider } from 'styled-components';
+import theme from './config/theme';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <h1>hi</h1>
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <React.StrictMode>
+      <Login />
+    </React.StrictMode>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 
