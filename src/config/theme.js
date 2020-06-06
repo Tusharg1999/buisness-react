@@ -12,8 +12,8 @@ const theme = {
         contrastText: "#fff",
     },
     text: {
-        primary: "#e6e5e8",
-        secondary: "#adb0bb",
+        primary: "#ffffff",
+        secondary: "#a7a4ae",
         disabled: "#ffffff88",
         hint: "#ffffff88",
         icon: "#ffffff88",

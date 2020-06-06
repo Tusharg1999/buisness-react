@@ -7,11 +7,12 @@ import { ThemeProvider } from 'styled-components';
 import theme from './config/theme';
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <React.StrictMode>
+
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
       <Login />
-    </React.StrictMode>
-  </ThemeProvider>,
+    </ThemeProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
