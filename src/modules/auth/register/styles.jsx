@@ -3,7 +3,7 @@ import { Heading, SubTitle } from '../../shared/components/typography/'
 import Input from '../../shared/components/input'
 import Button from '../../shared/components/button'
 
-const LoginContainer = styled.div`
+const RegisterContainer = styled.div`
 display:flex;
 height:100%;
 @media (min-width:100px) and (max-width: 1200px){
@@ -32,9 +32,9 @@ ${({ theme }) => css`
   padding-top:0px;
   padding-bottom:40px;
 
-}
-`}`
-
+} 
+`}
+`
 const SvgContainer = styled.div`
 flex:1;
 ${({ theme }) => css`
@@ -43,14 +43,14 @@ ${({ theme }) => css`
 } 
 `}
 `
-const LoginSvgImage = styled.img`
+const RegisterSvgImage = styled.img`
   height:100%;
-  float:right;
+  float:left;
 `
-const LoginHeading = styled(Heading)`
+const RegisterHeading = styled(Heading)`
 font-size:3rem;
 `
-const LoginForm = styled.form`
+const RegisterForm = styled.form`
 display:flex;
 justify-content:center;
 flex-direction:column;
@@ -67,14 +67,14 @@ width:500px;
   width:50%;
 }
 `
-const LoginBody = styled(SubTitle)`
+const RegisterBody = styled(SubTitle)`
 margin-top:10px;
 `
-const LoginInput = styled(Input)`
+const RegisterInput = styled(Input)`
 margin-top:20px
 `
-const LoginButton = styled(Button)`
+const RegisterButton = styled(Button)`
 margin-top:30px
 
 `
-export { LoginContainer, FormContainer, SvgContainer, LoginSvgImage, LoginHeading, LoginForm, LoginBody, LoginInput, LoginButton }
+export { RegisterContainer, FormContainer, SvgContainer, RegisterSvgImage, RegisterHeading, RegisterForm, RegisterBody, RegisterInput, RegisterButton }

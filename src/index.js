@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Login from "./modules/auth/login"
+import Login from "./modules/auth/register"
 import * as serviceWorker from './infrastructure/serviceWorker';
 import { ThemeProvider } from 'styled-components';
 import theme from './config/theme';
