@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import Login from "./modules/auth/register"
 import * as serviceWorker from './infrastructure/serviceWorker';
 import { ThemeProvider } from 'styled-components';
 import theme from './config/theme';
-
+import { ApplicationRouter } from './infrastructure/router'
 ReactDOM.render(
 
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Login />
+      <ApplicationRouter />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
