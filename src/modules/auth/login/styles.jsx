@@ -6,6 +6,10 @@ import Button from '../../shared/components/button'
 const LoginContainer = styled.div`
 display:flex;
 height:100%;
+@media (min-width:100px) and (max-width: 1200px){
+  justify-content:center;
+  align-items:center;
+}
 `
 
 const FormContainer = styled.div`
@@ -17,14 +21,15 @@ display:flex;
 flex-direction:column;
 ${({ theme }) => css`
 @media (min-width:100px) and (max-width: 1200px){
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:50%;
   height:100%;
   display:flex;
   padding-left:0px;
   padding-top:0px;
   padding:20px;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
 } 
 `}
 `
@@ -38,7 +43,7 @@ ${({ theme }) => css`
 `
 const LoginSvgImage = styled.img`
   height:100%;
-  float:right
+  float:right;
 `
 const LoginHeading = styled(Heading)`
 font-size:3rem;
@@ -48,8 +53,17 @@ display:flex;
 justify-content:center;
 flex-direction:column;
 position: relative;
-top:100px;
-width:500px
+top:10%;
+width:500px;
+@media (min-width:100px) and (max-width: 600px){
+  width:100%;
+}
+@media (min-width:500px) and (max-width: 700px){
+  width:50%;
+}
+@media (min-width:700px) and (max-width: 1200px){
+  width:50%;
+}
 `
 const LoginBody = styled(SubTitle)`
 margin-top:10px;
