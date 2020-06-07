@@ -1,13 +1,13 @@
 const theme = {
     primary: {
         main: "#0e153a",
-        light: "#6e80dc",
+        light: "#232870",
         dark: "#605db2",
         contrastText: "#ffffff",
     },
-    $secondary: {
+    secondary: {
         main: "#3d5af1",
-        light: "#6e80dc",
+        light: "#4b55e8",
         dark: "#605db2",
         contrastText: "#fff",
     },

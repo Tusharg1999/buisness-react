@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import LoginSvg from '../../../assets/svgs/loginSvg.svg'
-import { LoginContainer, FormContainer, SvgContainer, LoginSvgImage, LoginHeading, LoginForm, LoginBody } from './styles'
+import { LoginContainer, FormContainer, SvgContainer, LoginSvgImage, LoginHeading, LoginForm, LoginBody, LoginInput, LoginButton } from './styles'
 
 class Login extends Component {
     render() {
@@ -13,6 +13,11 @@ class Login extends Component {
                     </LoginHeading>
                     <LoginForm>
                         <LoginBody>Email Address</LoginBody>
+                        <LoginInput dark />
+                        <LoginBody>Password</LoginBody>
+                        <LoginInput dark />
+
+                        <LoginButton>Sign In</LoginButton>
                     </LoginForm>
                 </FormContainer>
                 <SvgContainer>
